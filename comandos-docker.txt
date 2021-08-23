@@ -1,0 +1,33 @@
+- to install Docker, go to the following link
+    url : https://docs.docker.com/get-docker/
+
+- docker image can be found in the docker registry (dockerHub).
+    url : https://hub.docker.com (official).
+
+" Download an imagen in docker.
+  >> docker pull <image-name>
+
+" Run an imagen in docker.
+  >> docker run <image-name>
+
+  | note : if we use the command 'docker run' with an image that has
+  |        not been extracted, 'docker run' will call 'docker pull'.
+
+" Download an image with a tag (differentiate between different
+  versions of an image or software).
+  >> docker pull <image-name>:tag
+
+  | note : if no 'tag' is specified, it will automatically download
+  |        'latest' (default).
+
+
+▌ NOTE : First we must clarify that the images are a set of layers.
+▌       
+▌        If we want to download the same image but specifying the
+▌        'tag' and between them they share some layers, docker will
+▌        only download the difference between them (it does not
+▌        redownload what is already downloaded being super efficient
+▌        with the space issue).
+
+
+
